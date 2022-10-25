@@ -73,3 +73,7 @@ INNER JOIN Customers ON orders.customer_id = Customers.customer_id
 Select *
 From Orders
 INNER JOIN Customers ON orders.customer_id = Customers.customer_id
+
+15)
+Select *, min(amount)
+from Orders
