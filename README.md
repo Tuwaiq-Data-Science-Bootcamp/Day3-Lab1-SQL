@@ -71,7 +71,10 @@ ON Orders.customer_id = Customers.customer_id;
 
 - Choose the correct `JOIN` clause to select all records from the two tables where there is a match in both tables.
 Ans:
-INNER JOIN
+SELECT Orders.*, Customers.*
+FROM Orders
+INNER JOIN Customers
+ON Orders.customer_id = Customers.customer_id;
 
 - Use the MIN function to select the record with the smallest value of the amount column from Orders table.
 Ans:
