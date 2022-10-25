@@ -1,17 +1,16 @@
 	•	Create a table "DS_bootcamp" containing three fields (trainee ID, trainee name, trainee university) and make the trainee ID the primary key
-       CREATE TABLE DS_bootcamp (
-
-  trainee_ID int PRIMARY KEY,
-  trainee_name varchar(50),
-  trainee_university text
+        CREATE TABLE DS_bootcamp (
+       trainee_ID int PRIMARY KEY,
+        trainee_name varchar(50),
+       trainee_university text
  
-);
+      );
 
 	•	Insert at least 2 records into the DB_ Bootcamp table.
-INSERT INTO DS_bootcamp(trainee_ID, trainee_name, trainee_university)
-VALUES
-(1, 'Asma','KAUST'),
-(2, 'Lili','KAUST');
+        INSERT INTO DS_bootcamp(trainee_ID, trainee_name, trainee_university)
+        VALUES
+       (1, 'Asma','KAUST'),
+       (2, 'Lili','KAUST');
 
 
 	•	Write a statement that will select the Country column from the Customers table.
