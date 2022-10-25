@@ -89,4 +89,5 @@ INNER JOIN Orders ON Orders.customer_id = Customers.customer_id
 - Use the MIN function to select the record with the smallest value of the amount column from Orders table.
 
 SELECT *,MIN(amount) FROM Orders
+-------------------------------------------------------------------------------------------
 
