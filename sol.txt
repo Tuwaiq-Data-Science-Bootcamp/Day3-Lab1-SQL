@@ -1,0 +1,36 @@
+
+ 1‪.CREATE TABLE DS_bootcamp (‬
+‪ trainee ID‬ int Not Null‪,‬
+‪ trainee name‬ varchar(255),‪,‬
+‪ trainee university‬ varchar(255),
+PRIMARY KEY( trainee ID));
+2‪.‬ INSERT DS_bootcamp VALUES (1,'Njood','KSU')
+ INSERT DS_bootcamp VALUES (2,'Nora','IMU')
+3. SELECT country FROM Customers
+4. SELECT DISTINCT country FROM Customers
+5. SELECT * FROM Customers where last_name like 'R%' 6. SELECT Count(customer_id),country
+FROM Customers group by country 7. SELECT *
+FROM Customers
+order by first_name 8. SELECT *
+FROM Customers
+order by last_name desc 9. SELECT *
+FROM Orders
+where item=='Mouse' and amount==300
+10. SELECT * FROM Shippings
+where not status=='Delivered'
+11. SELECT *
+FROM Customers
+where country=='USA' or country=='UAE'
+Or
+SELECT *
+FROM Customers
+where country in('USA','UAE')
+11. SELECT * FROM Customers where age == 22
+12.
+SELECT Customers.customer_id, Orders.item
+FROM Customers
+INNER Join Orders ON Customers.customer_id = Orders.customer_id
+13. SELECT *
+FROM Customers
+INNER Join Orders ON Customers.customer_id = Orders.customer_id
+13. SELECT min(amount) FROM Orders
