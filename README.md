@@ -76,4 +76,3 @@ INNER JOIN Customers ON Orders.Customer_ID = Customers.Customer_ID;
 - Use the MIN function to select the record with the smallest value of the amount column from Orders table.
 
 SELECT MIN(amount) FROM Orders ;
-
