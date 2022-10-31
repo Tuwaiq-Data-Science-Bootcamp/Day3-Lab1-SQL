@@ -1,0 +1,45 @@
+ create table DS_bootcamp(traineeId int NOT Null,
+traineeName char(255),
+traineeUni char(255),
+primary key (traineeId));ds_bootcamp
+
+insert into DS_bootcamp values (1,Rawan,KSU),(2,Dina,KSU);
+
+SELECT country FROM Customers;
+
+SELECT DISTINCT country FROM Customers;
+
+SELECT * FROM Customers
+WHERE last_name LIKE "R%" ;
+
+SELECT Count(customer_id), country FROM Customers
+GROUP BY country;
+
+SELECT * FROM Customers
+order BY first_name;
+
+SELECT * FROM Customers
+order BY last_name DESC;
+
+SELECT * FROM Orders
+where item = "Mouse" and amount = 300;
+
+SELECT * FROM Shippings
+where status NOT like "Delivered";
+
+SELECT * FROM Customers
+where country like "USA" or country like "UAE";
+
+SELECT * FROM Customers
+where age = 22; 
+
+
+SELECT Orders.Item, Customers.Customer_ID
+FROM Orders
+INNER JOIN Customers ON Orders.Customer_ID = Customers.Customer_ID;
+
+
+INNER Join
+
+
+SELECT MIN(amount), customer_id FROM Orders;
